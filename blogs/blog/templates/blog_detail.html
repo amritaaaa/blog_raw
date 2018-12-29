@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog detaill</title>
+</head>
+<body style="background-color:pink;" >
+
+ {% for b in obj %}
+ {{ b.image }}
+ <h3> {{ b.title }}  </h3>
+ by  <b> {{b.author}} </b> / <b> {{ b.date }} </b><br>
+    {{ b.content }}
+ {% endfor %}
+</body>
+</html>
